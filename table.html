@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Таблица</title>
+    <style>
+        table {
+            table-layout: fixed;
+            border-collapse: collapse;
+            width: 490px;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 0;
+            text-align: center;
+            vertical-align: middle;
+            width: 70px; 
+            height: 70px; 
+        }
+        th {
+            background-color: yellow;
+            text-align: center; 
+        }
+        td {
+            position: relative;
+        }
+        td span {
+            position: absolute;
+            top: 5px;
+            right: 5px; 
+        }
+        
+        td[colspan="3"] {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+        <tr>
+            <th>пн</th>
+            <th>вт</th>
+            <th>ср</th>
+            <th>чт</th>
+            <th>пт</th>
+            <th>сб</th>
+            <th>вс</th>
+        </tr>
+        <tr>
+            <td><span></span></td>
+            <td style="background-color: rgb(0, 149, 255);"><span>1</span></td>
+            <td style="background-color: rgb(0, 149, 255);"><span>2</span></td>
+            <td style="background-color: rgb(0, 149, 255);"><span>3</span></td>
+            <td style="background-color: rgb(0, 149, 255);"><span>4</span></td>
+            <td style="background-color: green;"><span>5</span></td>
+            <td style="background-color: green;"><span>6</span></td>
+        </tr>
+        <tr>
+            <td style="background-color: rgb(0, 149, 255);"><span>7</span></td>
+            <td style="background-color: rgb(0, 149, 255);"><span>8</span></td>
+            <td style="background-color: red;"><span>9</span></td>
+            <td style="background-color: rgb(0, 149, 255);"><span>10</span></td>
+            <td style="background-color: rgb(0, 149, 255);"><span>11</span></td>
+            <td style="background-color: green;"><span>12</span></td>
+            <td style="background-color: green;"><span>13</span></td>
+        </tr>
+        <tr>
+            <td style="background-color: rgb(0, 149, 255);"><span>14</span></td>
+            <td style="background-color: rgb(0, 149, 255);"><span>15</span></td>
+            <td style="background-color: rgb(0, 149, 255);"><span>16</span></td>
+            <td style="background-color: rgb(0, 149, 255);"><span>17</span></td>
+            <td style="background-color: rgb(0, 149, 255);"><span>18</span></td>
+            <td style="background-color: green;"><span>19</span></td>
+            <td style="background-color: green;"><span>20</span></td>
+        </tr>
+        <tr>
+            <td style="background-color: rgb(0, 149, 255);"><span>21</span></td>
+            <td style="background-color: rgb(0, 149, 255);"><span>22</span></td>
+            <td style="background-color: rgb(0, 149, 255);"><span>23</span></td>
+            <td style="background-color: rgb(0, 149, 255);"><span>24</span></td>
+            <td style="background-color: rgb(0, 149, 255);"><span>25</span></td>
+            <td style="background-color: green;"><span>26</span></td>
+            <td style="background-color: green;"><span>27</span></td>
+        </tr>
+        <tr>
+            <td style="background-color: rgb(0, 149, 255);"><span>28</span></td>
+            <td style="background-color: rgb(0, 149, 255);"><span>29</span></td>
+            <td style="background-color: rgb(0, 149, 255);"><span>30</span></td>
+            <td style="background-color: rgb(0, 149, 255);"><span>31</span></td>
+            <td colspan="3"></td>
+        </tr>
+    </table>
+
+</body>
+</html>
